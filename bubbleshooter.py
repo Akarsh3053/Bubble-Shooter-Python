@@ -25,6 +25,7 @@ RIGHT = 'right'
 LEFT = 'left'
 blank = '.'
 
+# Color Values for Bubbles
 vblue = (51, 255, 255)
 black = (0, 0, 0)
 white = (255, 255, 255)
@@ -132,7 +133,7 @@ class Ary(pygame.sprite.Sprite):
     def draw(self):
         dispsurf.blit(self.transformImage, self.rect)
 
-
+# Score Methods
 class Score(object):
     def __init__(self):
         self.total = 0
@@ -166,7 +167,7 @@ def main():
         score, winorlose = rngame()
         endScreen(score, winorlose)
 
-
+#game config
 def rngame():
     musclist = ['Whatever_It _Takes_OGG.ogg', 'bgmusic.ogg', 'Goofy_Theme.ogg']
     pygame.mixer.music.load(musclist[0])
@@ -186,7 +187,7 @@ def rngame():
     nxtbb.rect.bottom = winhgt - 5
 
     score = Score()
-
+# Main game loop 
     while True:
         dispsurf.fill(bgcolor)
 
