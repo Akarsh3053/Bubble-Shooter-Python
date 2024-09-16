@@ -5,7 +5,7 @@ It is a simple classic bubble shooter meant to kill time and pop bubbles, made u
 - Python
 - Pygame
 
-## Clona and play
+## Clone and play
 - Clone this repository
 - Open your terminal in the same directory
 - Run this command to install pygame
